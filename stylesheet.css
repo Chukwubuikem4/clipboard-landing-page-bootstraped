@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  /* primary */
+  --strong-cyan:  hsl(171, 66%, 44%);
+  --light-blue:  hsl(233, 100%, 69%);
+
+  /* neutral */
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+/* FONT */
+/* font family */
+.ff-bai{
+  font-family: 'Bai Jamjuree';
+}
+
+/* text color */
+.text-dark-grayish-blue{
+  color: var(--dark-grayish-blue);
+}
+
+.text-grayish-blue{
+  color: var(--grayish-blue);
+}
+
+/* BUTTONS */
+/* button color */
+.btn-strong-cyan{
+  background-color: var(--strong-cyan);
+  box-shadow: 5px 5px 10px var(--strong-cyan);
+}
+
+.btn-light-blue{
+  background-color: var(--light-blue);
+  box-shadow: 5px 5px 10px var(--light-blue);
+}
+
+
+
+
+/* HEADER */
+header{
+  background: url('images/bg-header-mobile.png') center center no-repeat;
+  background-size: cover;
+}
+
+/* LOGO */
+header .navbrand img.w-25{
+  width: 30% !important;
+}
+
+/* MAIN */
+main h1.fs-1{
+  font-size: 33px !important;
+}
+
+/* buttons */
+main .buttons button.py-2{
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+}
+
+main .buttons button.px-5:first-child{
+  padding-right: 3.2em !important;
+  padding-left: 3.2em !important;
+}
+
+main .buttons button:hover{
+  opacity: 55%;
+}
+
+/* section I */
+section.I{
+  background: url('images/image-computer.png')left -50px top 220px no-repeat;
+  background-size: 45%;
+  padding-bottom: 10%;
+}
+
+section.I .row.pt-md-5{
+  padding-top: 5% !important;
+}
+section.I .text.w-50{
+  width: 44% !important;
+}
+
+section.I h4{
+  font-size: 33px !important;
+}
+
+/* section II */
+section.II.pt-md-5.pb-md-5{
+  background: url('images/image-devices.png') center top 300px no-repeat;
+  background-size: 60%;
+  padding-bottom: 40% !important;
+  padding-top: 10% !important;
+}
+
+section.II .text-container.w-50{
+  width: 45% !important;
+}
+
+/* section IV */
+section.IV.px-md-5{
+  padding-left: 5em !important;
+  padding-right: 5em !important;
+}
+
+/* section V */
+section.V .buttons button.py-2{
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+}
+
+section.V .buttons button.px-5:first-child{
+  padding-right: 3.2em !important;
+  padding-left: 3.2em !important;
+}
+
+/* footer */
+footer.px-md-5.bg-grayish-blue{
+  padding-right: 4em !important;
+  padding-left: 4em !important;
+  background: hsla(202, 11%, 66%, 0.137);
+}
+
+footer a:hover{
+  color: var(--strong-cyan);
+}
+
+
+
+
+/* SMALL AND XTRA SMALL SCREENS */
+@media (max-width: 767px){
+
+  section.I{
+    background: none;
+  }
+  /* section I */
+  section.I .text.w-50{
+    width: 100% !important;
+  }
+
+  /* section II */
+  section.II.pt-md-5.pb-md-5{
+    background: none;
+    padding-bottom: 30px !important;
+  }
+
+  section.II .text-container.w-50{
+    width: 100% !important;
+  }
+
+  /* section III */
+  section.III .features .row .col-md .text.w-75{
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* section V */
+  section.V .text-container.w-50{
+    width: 100% !important;
+  }
+
+  /* footer */
+  footer .logo img{
+    width: 20% !important;
+    height: 20% !important;
+  }
+}
+
+/* adjusting section II font-size for screens 768px- 1247px */
+@media (768px <= width <= 1249px){
+  section.I h4{
+    font-size: 28px !important;
+  }
+
+  section.I .text-container.py-md-4{
+    padding-top: .6em !important;
+    padding-bottom: .6em !important;
+  }
+
+  section.I h3{
+    font-size: 19px !important;
+  }
+
+  section.I p{
+    font-size: 13px !important;
+  }
+}
+
+@media(576px <= width <= 999px){
+  /* HEADER */
+  /* logo */
+  header .navbrand{
+    width: 40%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* section I */
+  section.I .text.w-50{
+    width: 80% !important;
+  }
+
+  /* section II */
+  section.II .text-container.w-50{
+    width: 100% !important;
+  }
+
+  section.V .text-container.w-50{
+    width: 100% !important;
+  }
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1000px){
+  /* HEADER */
+  header{
+    background: url('images/bg-header-desktop.png') center center no-repeat;
+    background-size: cover;
+  }
+  /* logo */
+  header .navbrand{
+    width: 26%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+
+}
+
