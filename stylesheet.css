@@ -202,6 +202,20 @@ footer a:hover{
   section.III {
     padding-top: 3em !important;
   }
+
+  /* footer */
+
+  footer a{
+    font-size: 14px !important;
+  }
+  
+  footer .socials{
+    width: 25% !important;
+  }
+  
+  footer .socials a>i.fs-4{
+    font-size: 14px !important;
+  }
 }
 
 @media (768px <= width <= 840px){
